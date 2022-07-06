@@ -16,16 +16,16 @@ public class Control2_ex2 {
 		int num = sc.nextInt();	
 		
 		System.out.println("알파벳을 입력");
-		char ch = sc.next().charAt(0);		
-		int result=0;		
-		result = ch;		
+		char ch = sc.next().charAt(0);	
 		
-		if(result>=122) {
-			result = 96;
-			result = result + num;
+		ch = (char)(ch+num);
+		
+		if((int)ch>122) {
+			ch='a';
+			ch= (char)(ch+num-1);		
 		}
 		
-		System.out.println((char)result);
+		System.out.print("ch -> "+ch);
 		
 		
 	}
