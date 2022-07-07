@@ -27,7 +27,11 @@ public class Control2_ex2 {
 		
 		System.out.print("ch -> "+ch);
 		
+
 		//스터디에디션히히히히히히히히
+		//아무거나
+		
+
 	}
 
 }
