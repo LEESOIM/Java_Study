@@ -34,6 +34,9 @@ public class Loop4_ex1 {
 			
 		}//바깥쪽 for
 
+			
+		
+		
 	}
 
 }

@@ -54,7 +54,6 @@ public class Loop1_ex2 {
 						
 			if(id == yId && pw == yPw) {
 				System.out.println("로그인 성공!"); 
-				i=10;
 				check =! check;
 				break;
 				

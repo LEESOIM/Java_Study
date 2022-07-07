@@ -13,14 +13,14 @@ public class Loop1_ex1 {
 			}
 		}
 		
-		System.out.println("ㅡㅡㅡㅡㅡ");
+		System.out.println("ㅡㅡㅡㅡㅡㅡ");
 		
 		// if문을 사용하지 않고 출력
 		for(int i=0;i<10;i+=2) {
 			System.out.println(i);
 		}
 		
-		System.out.println("ㅡㅡㅡㅡㅡ");
+		System.out.println("ㅡㅡㅡㅡㅡㅡ");
 		
 		for(int i=0;i<10;i++) {
 			System.out.println(i);
