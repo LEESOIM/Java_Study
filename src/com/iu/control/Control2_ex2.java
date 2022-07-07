@@ -9,7 +9,7 @@ public class Control2_ex2 {
 		//num=2 a -> c
 		//num=1 z -> a
 		//num=2 z -> b
-		//a=97 z=122
+		//a(97) z(122)
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("1 ~ 5 사이의 숫자를 입력");
@@ -27,7 +27,7 @@ public class Control2_ex2 {
 		
 		System.out.print("ch -> "+ch);
 		
-		
+		//스터디에디션히히히히히히히히
 	}
 
 }
