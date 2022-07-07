@@ -27,6 +27,7 @@ public class Control2_ex2 {
 		
 		System.out.print("ch -> "+ch);
 		
+		//아무거나
 		
 	}
 
