@@ -16,20 +16,27 @@ public class Loop4_ex1 {
 		
 		for(int m=0;m<60;m++) {
 			
+			boolean flag=false;
+			
 			for(int s=0;s<60;s++) {
-				
 				System.out.println(m+"분 "+s+"초");
 				
 				if(s==sec && m==min) {
-					break;
+					flag=!flag; //if가 성립되면 true가 된다
+//					m=60;	//방법1
+					break; //안쪽 반복문만 종료
 				}
 				
 			}//안쪽 for		
 			
-				
-			if(m==min) {	
+			if(flag) { 		//방법2
 				break;
 			}
+
+			
+//			if(m==min) {	//방법3?
+//			break;
+//		}
 			
 			
 		}//바깥쪽 for
