@@ -3,6 +3,8 @@ package com.iu.loop;
 public class Loop1 {
 
 	public static void main(String[] args) {
+		// for문 : 반복 해야할 횟수가 정해져 있을 때 사용
+		
 		System.out.println("Start");
 		
 		//for(초기식;조건식;증감식)

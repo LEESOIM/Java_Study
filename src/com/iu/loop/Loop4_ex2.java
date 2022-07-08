@@ -17,15 +17,42 @@ public class Loop4_ex2 {
 			System.out.println("1.단발  2.점사");
 			int num = sc.nextInt();
 			
-			if(num==1) {
-				for(int i=0;i<30;i++) { //단발
-					 System.out.println(i+1 +".탕💥");
-				 }
-			} else {
-				for(int i=0;i<10;i++) { //점사
-					System.out.println(i+1 +".탕💥 탕💥 탕💥");
-				 }
-			}
+//			if(num==1) {
+//				for(int i=0;i<30;i++) { //단발
+//					 System.out.println(i+1 +".탕💥");
+//				 }
+//			} else {
+//				for(int i=0;i<10;i++) { //점사
+//					System.out.println(i+1 +".탕💥 탕💥 탕💥");
+//				 }
+//			}
+			
+// -------------------------------------------------------	
+//			int count=10;
+//			String sound="타타탕";
+//			if(select==1) {
+//				count=30;
+//				sound="탕";
+//			}
+//			for(int b=0;b<count;b++) {
+//				System.out.println(sound);
+//			}
+			
+// -------------------------------------------------------			
+//			if(select==1) {
+//				for(int b=0;b<30;b++) {
+//					System.out.println("탄창 : "+mag+" 총알: "+b + " 탕");
+//				}
+//			}else {
+//				for(int b=0;b<10;b++) {
+//					System.out.println("탄창 : "+mag+" 총알: "+b + " 타타탕");
+//				}
+//				
+//			}
+			
+			
+			
+			
 			
 			if(count<2) {
 				System.out.println("----------재충전----------");
