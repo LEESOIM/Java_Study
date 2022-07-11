@@ -26,7 +26,7 @@ public class Loop5_ex2 {
 		while(check) {
 			System.out.println("0.✌ 1.✊ 2.🖐");		
 			int user = sc.nextInt();
-			int com = random.nextInt(3);
+			int com = random.nextInt(3); //0부터 3 미만 범위에서 무작위 정수를 뽑아준다
 			String user_str = Integer.toString(user);
 			String com_str = Integer.toString(com);
 			
