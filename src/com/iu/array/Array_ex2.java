@@ -60,7 +60,7 @@ public class Array_ex2 {
 					int damage = random.nextInt(magicPower);
 					System.out.println(monsterPartyNames[i]+" 에게 "+damage+" 공격");
 					monsterPartyHps[i] = monsterPartyHps[i]-damage;
-					System.out.println(monsterPartyNames[i]+" : "+monsterPartyHps[i]);
+					System.out.println("🩸"+monsterPartyNames[i]+" : "+monsterPartyHps[i]);
 					//monsterPartyHps[i]=monsterPartyHps[i]-random.nextInt(magicPower);
 				
 					if(monsterPartyHps[i]<1) {
