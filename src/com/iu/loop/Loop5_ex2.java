@@ -6,8 +6,10 @@ import java.util.Scanner;
 public class Loop5_ex2 {
 
 	public static void main(String[] args) {
+		
 		Scanner sc = new Scanner(System.in);
 		Random random = new Random();
+		
 //		nexInt(정수) : 0부터 입력한 정수 미만 범위에서 무작위 정수를 뽑아준다
 //		int num=random.nextInt(10);
 //		System.out.println(num);
