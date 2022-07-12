@@ -105,7 +105,6 @@ public class Array_ex3 {
 				}else if(select==4) {//4.학생 정보 삭제
 					System.out.println("[삭제할 학생의 번호를 입력]");
 					select = sc.nextInt();
-					System.out.println("Num\tName\tTotal\tAvg");
 					for(int i=0;i<num.length;i++) {
 						if(num[i]==select) {
 							num[i]=0;

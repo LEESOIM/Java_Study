@@ -31,8 +31,13 @@ public class Array_1 {
 		
 //		자바는 메모리 영역이 크게 3가지로 구분
 //		1. Method - main Method : 로딩(실행)파일
-//		2. Stack - main Method가 Stack에 차곡차곡 쌓인다 First In Last Out(LIFO)		
+//			Method 안에 선언되는 변수 : 클래스변수
+//		2. Stack - main Method가 Stack에 차곡차곡 쌓인다 First In Last Out(LIFO)	
+//			Stack 안에 선언되는 변수 : 지역변수 {} 
 //		3. Heap - new 라고 선언된 부분이 연속으로 만들어짐
+//			Heap 안에 선언되는 변수 : 인스턴스변수 new
+		
+//		기타) 참조변수 : 변수값이 객체의 주소값을 담고 있는 변수
 
 		
 		
