@@ -88,14 +88,18 @@ public class Array_ex3 {
 				}else if(select==3){//3.학생 정보 검색
 					System.out.println("[검색할 학생의 번호 입력]");
 					select = sc.nextInt();
-
+					boolean flag = true;
 					for(int i=0;i<num.length;i++) {
 						if(num[i]==select) {
 							System.out.println("Num\tName\tTotal\tAvg");
 							System.out.println(num[i]+"\t"+name[i]+"\t"+total[i]+"\t"+avg[i]);
 							System.out.println("----------------------------");
-							break;
+							flag=!flag;
 						}
+					}
+					
+					if(flag) {
+						System.out.println(">>일치하는 학생 정보가 없습니다.");
 					}
 					
 				}else if(select==4) {//4.학생 정보 삭제
