@@ -89,13 +89,14 @@ public class Array_ex3 {
 					System.out.println("[검색할 학생의 번호 입력]");
 					select = sc.nextInt();
 					boolean flag = true;
-					for(int i=0;i<num.length;i++) {
-						if(num[i]==select) {
+					for(int i=0;i<num.length;i++) { 
+						if(num[i]==select) { //값이 같을때만 if문 실행 -> flag는 flase가 된다
 							System.out.println("Num\tName\tTotal\tAvg");
 							System.out.println(num[i]+"\t"+name[i]+"\t"+total[i]+"\t"+avg[i]);
 							System.out.println("----------------------------");
-							flag=!flag;
+							flag=!flag; //false
 						}
+						//flag=true인 상태로 for문 반복
 					}
 					
 					if(flag) {
@@ -105,56 +106,109 @@ public class Array_ex3 {
 				}else if(select==4) {//4.학생 정보 삭제
 					System.out.println("[삭제할 학생의 번호를 입력]");
 					select = sc.nextInt();
-					for(int i=0;i<num.length;i++) {
+					
+					boolean flag=false;
+					
+					String [] nameCopy = null;
+					int [] numCopy = null;
+					int [] korCopy = null;
+					int [] engCopy = null;
+					int [] mathCopy = null;
+					int [] totalCopy = null;
+					int [] avgCopy = null;
+					
+					int i=0;
+					for(i=0;i<num.length;i++) {
 						if(num[i]==select) {
-							num[i]=0;
-							name[i]="0";
-							total[i]=0;
-							avg[i]=0;
+							flag=!flag; //삭제할 번호와 일치하면 flag=true
+							break;
 						}
-						System.out.println(num[i]+"\t"+name[i]+"\t"+total[i]+"\t"+avg[i]);
+					}if(flag) {//true
+						numCopy = new int[num.length-1];
+						nameCopy = new String [numCopy.length];
+						korCopy = new int[numCopy.length];
+						engCopy = new int[numCopy.length];
+						mathCopy = new int[numCopy.length];
+						totalCopy = new int[numCopy.length];
+						avgCopy = new int[numCopy.length];
+						
+						int index=0;
+						for(int j=0;j<name.length;j++) {
+							if(j==i) {
+								continue;//for : 그 즉시 증감식으로 이동
+							}
+							nameCopy[index]=name[j];
+							numCopy[index]=num[j];
+							korCopy[index]=kor[j];
+							engCopy[index]=eng[j];
+							mathCopy[index]=math[j];
+							totalCopy[index]=total[j];
+							avgCopy[index]=avg[j];
+							index++;
+						}
+						
+						name=nameCopy;
+						num=numCopy;
+						kor=korCopy;
+						eng=engCopy;
+						math=mathCopy;
+						total=totalCopy;
+						avg=avgCopy;
+					}else {
+						System.out.println(">>일치하는 학생 정보가 없습니다.");
 					}
-
 					
 				}else if(select==5) {//5.학생 정보 추가
 					System.out.println("[학생 정보 추가]");
-					num = new int[num.length+1];
-					name = new String[num.length+1];
-					kor = new int[num.length+1];
-					eng = new int[num.length+1];
-					math = new int[num.length+1];
-					total = new int[num.length+1];
-					avg = new int[num.length+1];
+					int [] numCopy = new int [num.length+1]; 
+					String [] nameCopy = new String [numCopy.length]; 
+					int [] korCopy = new int [numCopy.length];     
+					int [] engCopy = new int [numCopy.length];   
+					int [] mathCopy = new int [numCopy.length];  
+					int [] totalCopy = new int [numCopy.length];    
+					int [] avgCopy = new int [numCopy.length];   
 					
-					for(int i=num.length; i<num.length+1; i++) {
-						System.out.println("번호 입력");
-						num [i] = sc.nextInt();
-						System.out.println("이름 입력");
-						name [i] = sc.next();
-						System.out.println("국어 점수 입력");
-						kor [i] = sc.nextInt();
-						System.out.println("영어 점수 입력");
-						eng [i] = sc.nextInt();
-						System.out.println("수학 점수 입력");
-						math [i] = sc.nextInt();
-						
-						total[i] = kor[i]+eng[i]+math[i];
-						avg[i] = total[i]/3;
-						
-						System.out.println("Num\tName\tTotal\tAvg");
-						System.out.println(num[i]+"\t"+name[i]+"\t"+total[i]+"\t"+avg[i]);
-						System.out.println("----------------------------");
+					for(int i=0; i<num.length; i++) {
+						nameCopy[i]=name[i];
+						numCopy[i]=num[i];
+						korCopy[i]=kor[i];
+						engCopy[i]=eng[i];
+						mathCopy[i]=math[i];
+						totalCopy[i]=total[i];
+						avgCopy[i]=avg[i];
 					}
 					
+									
 					
-				System.out.println();
+					System.out.println("추가 학생 이름 입력");
+					nameCopy[name.length]=sc.next();
+					System.out.println("추가 학생 번호 입력");
+					numCopy[name.length]=sc.nextInt();
+					System.out.println("추가 학생 국어 입력");
+					korCopy[name.length]=sc.nextInt();
+					System.out.println("추가 학생 영어 입력");
+					engCopy[name.length]=sc.nextInt();
+					System.out.println("추가 번째 학생 수학 입력");
+					mathCopy[name.length]=sc.nextInt();
+					totalCopy[name.length]=korCopy[name.length]+engCopy[name.length]+mathCopy[name.length];
+					avgCopy[name.length]=totalCopy[name.length]/3;
+					
+					name=nameCopy;
+					num=numCopy;
+					kor=korCopy;
+					eng=engCopy;
+					math=mathCopy;
+					total=totalCopy;
+					avg=avgCopy;
+					System.out.println("====== 학생 삭제 끝 ======");
 					
 					
-				}else if(select==6) {//6.프로그램 종료
+				}else {//6.프로그램 종료
 					break;
 				}
 		
 		}
+		System.out.println("프로그램을 종료 합니다");
 	}
 
 }
