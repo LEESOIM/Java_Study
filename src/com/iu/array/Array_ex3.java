@@ -207,7 +207,8 @@ public class Array_ex3 {
 					break;
 				}
 		
-		}
+		}//while 끝
+		
 		System.out.println("프로그램을 종료 합니다");
 	}
 

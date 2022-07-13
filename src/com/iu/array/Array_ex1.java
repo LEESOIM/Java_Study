@@ -15,7 +15,6 @@ public class Array_ex1 {
 		Scanner sc = new Scanner(System.in);
 		int count = sc.nextInt();
 		String [] names = new String[count]; 
-		int [] kors = new int[names.length];
 		
 		for(int i=0;i<names.length;i++) {
 			System.out.println(i+1+"번 이름 입력");
@@ -28,6 +27,8 @@ public class Array_ex1 {
 		
 		
 		//각 학생의 이름별로 국어점수를 입력 후 출력
+		int [] kors = new int[names.length];
+
 		for(int i=0;i<kors.length;i++) {
 			System.out.println(names[i]+" 국어점수 입력");
 			kors[i]=sc.nextInt();

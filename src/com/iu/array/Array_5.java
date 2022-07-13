@@ -23,6 +23,7 @@ public class Array_5 {
 		
 		nums3[0]=100;
 		System.out.println(nums1[0]);
+
 		
 		nums3 = new int [5]; //new : 배열을 새로 만들어라
 		System.out.println(nums3[0]); //int(프리미티브)타입 초기값 : 0
